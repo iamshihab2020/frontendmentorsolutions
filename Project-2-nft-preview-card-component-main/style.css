@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+
+}
+
+a{
+    text-decoration: none;
+}
+section.nft-card{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-card{
+    height: 550px;
+    width: 350px;
+    /* border: red 2px solid; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background:hsl(216, 50%, 16%) ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px 11px rgba(3, 12, 26, 0.98);
+-webkit-box-shadow: 0px 0px 9px 11px rgba(3, 12, 26, 0.98);
+-moz-box-shadow: 0px 0px 9px 11px rgba(3, 12, 26, 0.98);
+    
+}
+
+
+.pic img{
+    height: 300px;
+    border-radius: 15px;
+}
+
+
+.content a#equi-name{
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 600;
+}
+.content a#equi-name:hover{
+    color:hsl(178, 100%, 50%) ;
+}
+
+.content p#equi-details{
+    color:hsl(215, 51%, 70%) ;
+    width: 267px;
+}
+
+#p-t{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p#price{
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+p#price img{
+    margin-right: 5px;
+}
+p#timer{
+    display: flex;
+    align-items: center;
+    color:hsl(215, 51%, 70%) ;
+}
+p#timer img{
+    margin-right: 5px;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+}
+.creator img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.creator p#name{
+    color: hsl(215, 51%, 70%);
+}
+.creator p#name a{
+    color: hsl(0, 0%, 100%);
+}
+.creator p#name a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.pic{
+    position: relative;
+    overflow: hidden;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.layer:hover{
+    background: 	rgba(0, 255, 247,0.5);
+    cursor: pointer;
+}
+
+.layer img{
+    width: 50px;
+    height: 50px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover img{
+    bottom:45%;
+    opacity: 1;
+}
