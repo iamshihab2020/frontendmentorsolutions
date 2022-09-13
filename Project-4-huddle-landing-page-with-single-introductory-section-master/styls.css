@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+html{
+    transition: ease-in-out;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("./images/bg-desktop.svg");
+    font-weight: 400;
+}
+nav img{
+    height: 40px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 50px ;
+}
+.header-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+picture img{
+    height: 500px;
+}
+.header{
+    padding: 0 90px;
+}
+.header h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 36px;
+    /* width: 362px; */
+}
+
+.header p{
+    color: white;
+}
+button.btn{
+    padding: 10px 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(257, 40%, 49%);
+    border: 1px solid white;
+    border-radius: 50px;
+    box-shadow: 3px 9px 16px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 9px 16px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 9px 16px 1px rgba(0,0,0,0.75);
+}
+button.btn:hover{
+    background:hsl(300, 69%, 71%) ;
+    color: white;
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+
+}
+
+.social{
+    /* margin-top: 50px; */
+    text-align: right;
+    font-size: 20px;
+}
+.social i{
+    border: 2px solid white;
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 80px;
+    color: white;
+}
+.social i:hover{
+    color: hsl(300, 69%, 71%) ;
+    border: 2px solid hsl(300, 69%, 71%) ;
+
+}
+
+
+
+
+@media (max-width:375px) {
+
+    nav img{
+        height: 30px;
+    }
+    .header-main picture img{
+        height: 200px;
+    }
+    .header-main{
+        flex-direction: column;
+    }
+    .header{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header h1{
+        /* padding: 10px; */
+        text-align: center;
+        font-size: 25px;
+    }
+    .header p{
+        text-align: center;
+    }
+    .header button.btn{
+        margin-left: 35px;
+        padding: 10px 70px;
+        align-self: center;
+    }
+
+    .social {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
